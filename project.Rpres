@@ -1,0 +1,32 @@
+Developing Data Products - Coursera - Course Project
+========================================================
+author: Alexey Pronin
+date: 09/2/2015
+
+Goal
+========================================================
+- Demonstrate the power of Rshiny.
+- Explore the diamonds dataset through Rshiny.
+- Build a model to predict the price of diamonds using a ML method.
+
+Diamonds dataset
+========================================================
+A dataset diamonds containing the prices and other attributes of almost 54,000 diamonds.
+```{r}
+library(ggplot2)
+dim(diamonds)
+names(diamonds)
+```
+
+RShiny app
+========================================================
+There are 4 tabs in the app:
+- Data: the diamond dataset and its exploration.
+- Summary Statistics: list of objects and their structure as well as summary statistics for each column.
+- Models: Linear model to predict the price of diamonds.
+- About: author, date, and the goal of the project.
+
+Conclusion
+========================================================
+- Rshiny allows effectively explore the data. Through changing parameters it is possible to select columns for exploration as well as partition the data. 
+- A linear model was built on training data. It was validated on testing data. The package 'caret' was used. R-squared values and graphs were presented to support the model.
